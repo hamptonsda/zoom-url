@@ -1,0 +1,11 @@
+{
+  "name": "zoom-url",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "purge": "purgecss --css bootstrap.min.css --content index.html --output bootstrap.purged.css"
+  },
+  "dependencies": {
+    "purgecss": "^3.0.0"
+  }
+}
