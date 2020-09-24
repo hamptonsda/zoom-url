@@ -27,8 +27,8 @@
                 }
             })()
         </script>
-        <link href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="./bootstrap.min.css"> -->
+        <!-- <link href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="./bootstrap.min.css">
     </head>
     <body>
         <div class="container">
@@ -75,19 +75,19 @@
         <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
         <!-- <script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
         <script>
-            const BASE = "https://skyzh.github.io/zoom-url-generator"
+            const BASE = "https://alexx.ml/zoom-url-generator"
             // const BASE = ""
             $(document).ready(() => {
                 $("#meeting-id").val("852-901-5944")
                 $("#meeting-password").val("")
-                $("#meeting-name").val("Nobody - 51800000000")
+                $("#meeting-name").val("")
                 $("#btn-clear").click(() => {
                     localStorage.clear()
                     $("#text-info").text("information reset succeed")
                 })
                 $("#btn-generate").click(() => {
                     const id = $("#meeting-id").val().replace(/\D/g,'')
-                    const pwd = $("#meeting-password").val().replace(/\D/g,'')
+                    const pwd = $("#meeting-password").val() //.replace(/\D/g,'') // Keep letters
                     const name = $("#meeting-name").val().trim()
                     const result = `zoommtg://zoom.us/join?confno=${id}&pwd=${pwd}&uname=${encodeURIComponent(name)}`
                     $("#meeting-url").val(result)
