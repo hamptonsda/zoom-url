@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "purge": "purgecss --css bootstrap.min.css --content index.html --output bootstrap.purged.css"
+    "purge": "purgecss --css bootstrap.min.css --content index.html --output bootstrap.purged.css",
+    "minify": "html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --minify-css --minify-js -o index.html index.original.html"
   },
   "dependencies": {
+    "html-minifier-terser": "^5.1.1",
     "purgecss": "^3.0.0"
   }
 }
