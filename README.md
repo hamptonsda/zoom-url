@@ -1,5 +1,5 @@
 # Zoom url generator
+_
+_Forked from https://github.com/FrozenAlex/zoom-url which was forked from https://skyzh.github.io/zoom-url-generator/_
 
-_Forked from https://skyzh.github.io/zoom-url-generator/_
-
-Visit to generate your custom zoom url
+Use at https://hamptonsda.github.io/zoom-url/
